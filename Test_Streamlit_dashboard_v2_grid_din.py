@@ -34,7 +34,7 @@ df_status['TIMESTAMP_IOT_2']=pd.to_datetime(df_status["Timestamp"],dayfirst='Tru
 df_status=df_status.replace('[-11059] No Good Data For Calculation', np.nan, regex=False)
 df_status['Throuput']=df_status['Throuput'].astype(float)
 
-df_1h=pd.read_csv("df_1h.csv",sep=";",decimal=".").drop(columns='Unnamed: 0')
+df_1h=pd.read_csv("df_1h_power.csv",sep=";",decimal=".").drop(columns='Unnamed: 0')
 df_1h['TIMESTAMP_IOT_2']=pd.to_datetime(df_1h["TIMESTAMP_IOT_2"],dayfirst='True')
 
 df_status_filt=df_status[(df_status["TIMESTAMP_IOT_2"]>=fech_inic)&(df_status["TIMESTAMP_IOT_2"]<=fech_fin)].copy()
