@@ -94,7 +94,7 @@ with col1:
     st.pyplot(fig1)
 
 with col2:
-    st.title("Chancadores Caserones")
+    st.title("Chancadores")
     st.subheader("Throuput [TPH]")
     #c=alt.Chart(df_status).mark_line().encode(
     #x=alt.X('TIMESTAMP_IOT_2:T'),# axis=alt.Axis(alt.Scale(interval= 'day', step= 30))),
